@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Active Volume</title>
+</head>
+<body>
+    <h3>上线</h3>
+
+    <form action="action/online.php" method="get">
+        <table>
+            <tr>
+                <td>
+                    服务地址:
+                </td>
+                <td>
+                    <select name="serviceUrl" style="width: 60%">
+                        <option value="http://172.16.3.171:8880">测试-172.16.3.171</option>
+                        <option value="http://182.92.236.103:8880">阿里云-2.0.3-182.92.236.103</option>
+                        <option value="http://182.92.236.103:8881">阿里云-2.0.4-182.92.236.103</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    UUID:
+                </td>
+                <td>
+                    <input type="text" name="uuid" size="60" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    OPID:
+                </td>
+                <td>
+                    <input type="text" name="opid" size="60" value="CUCC"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    APPID:
+                </td>
+                <td>
+                    <input type="text" name="appId" size="60" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    设备类型:
+                </td>
+                <td>
+                    <input type="text" name="deviceType" size="60" value="HUAWEI"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    操作系统版本:
+                </td>
+                <td>
+                    <input type="text" name="osVersion" size="60" value="Android4.4"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    签名版本:
+                </td>
+                <td>
+                    <input type="text" name="signatureVersion" size="60" value="v1"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="提  交" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="重  置" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

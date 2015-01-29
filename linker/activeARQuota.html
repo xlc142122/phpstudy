@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Active AllRound Volume</title>
+</head>
+<body>
+    <h3>全向流量激活</h3>
+
+    <form action="action/activeARQuota.php" method="get">
+        <table>
+            <tr>
+                <td>
+                    服务地址:
+                </td>
+                <td>
+                    <select name="serviceUrl" style="width: 60%">
+                        <option value="http://172.16.3.171:8880">测试-172.16.3.171</option>
+                        <option value="http://182.92.236.103:8880">阿里云-2.0.3-182.92.236.103</option>
+                        <option value="http://182.92.236.103:8881">阿里云-2.0.4-182.92.236.103</option>
+                    </select>
+                    <!--
+                    <input type="text" name="serviceUrl" size="60" value="http://172.16.3.171:8880"/>
+                    -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    激活码:
+                </td>
+                <td>
+                    <input type="text" name="activeCode" size="60" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    UUID:
+                </td>
+                <td>
+                    <input type="text" name="uuid" size="60" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    APPID:
+                </td>
+                <td>
+                    <input type="text" name="appId" size="60" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    活动ID:
+                </td>
+                <td>
+                    <input type="text" name="promotionId" size="60" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    激活流量包:
+                </td>
+                <td>
+                    <input type="text" name="trafficPackage" size="60" value="10"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    回调地址:
+                </td>
+                <td>
+                    <input type="text" name="callbackUrl" size="60" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    重定向地址:
+                </td>
+                <td>
+                    <input type="text" name="redirectUrl" size="60" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    签名版本:
+                </td>
+                <td>
+                    <input type="text" name="signatureVersion" size="60" value="v1"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="提  交" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="重  置" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
